@@ -33,7 +33,7 @@ const projects = [
         description: "Created comprehensive network hardening documentation including device hardening procedures, authentication setup, and monitoring configurations. Developed implementation guides and change management templates for network security updates.",
         tags: ["Documentation", "Network Hardening", "Security Baseline", "Change Management"],
         details: {
-            github: "https://github.com/yourusername/security-baseline",
+            github: "https://github.com/chiemerieulu/security-baseline",
             templates: "path-to-templates"
         }
     }
