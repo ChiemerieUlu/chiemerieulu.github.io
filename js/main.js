@@ -29,11 +29,11 @@ const projects = [
         }
     },
     {
-        title: "Network Security Baseline Documentation",
-        description: "Created comprehensive network hardening documentation including device hardening procedures, authentication setup, and monitoring configurations. Developed implementation guides and change management templates for network security updates.",
-        tags: ["Documentation", "Network Hardening", "Security Baseline", "Change Management"],
+        title: "Static Routing Implementation",
+        description: "Designed and implemented static routing in Cisco Packet Tracer. secure configurations, including route tables, access control lists (ACLs), and verification testing.",
+        tags: ["Topology", "Static Routing", "Cisco Packet Tracer", "Network Security"],
         details: {
-            github: "https://github.com/chiemerieulu/security-baseline",
+            github: "https://github.com/chiemerieulu/static-routing",
             templates: "path-to-templates"
         }
     }

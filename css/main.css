@@ -16,9 +16,70 @@ body {
 }
 
 .profile-img {
+    width: 30%;
+    height: 140px; /* Adjust height as needed */
+    background: linear-gradient(135deg, #3498db, #9b59b6); /* Example gradient */
+    position: relative;
+    overflow: hidden; /* Prevent potential overflow */
+    border-radius: 8px; /* Optional rounded corners */
     border-radius: 50%;
     margin-bottom: 20px;
-}
+  }
+  
+  .profile-img::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2); /* Optional semi-transparent overlay */
+    pointer-events: none; /* Make overlay non-interactive */
+  }
+  
+  .profile-img-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white; /* Text color */
+  }
+  
+  .profile-img-content h1 {
+    font-size: 2.5em; /* Adjust font size */
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional text shadow */
+  }
+  
+  .profile-header-content p {
+    font-size: 1.2em; /* Adjust font size */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Optional: Add a subtle wave effect */
+  .profile-img::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px; /* Adjust wave height */
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none"><path d="M1200 120L0 16.68 0 0 1200 0 1200 120z" fill="white"/></svg>') repeat-x; /* Wave SVG */
+    background-size: 1000px 50px; /* Adjust wave size */
+    animation: wave 7s linear infinite; /* Optional animation */
+  }
+  
+  @keyframes wave {
+    0% {
+      background-position: 1000px 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+  
+ 
 
 .section {
     margin-bottom: 40px;
