@@ -3,105 +3,467 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ulu Chukwuemerie Ukaobasi - Network Security Engineer Portfolio</title>
+    <title>Ulu Chukwuemerie Ukaobasi - Cybersecurity Professional</title>
+    <meta name="description" content="Cybersecurity student and aspiring Network Security Engineer specializing in network security, vulnerability assessment, and security implementation.">
+    <meta name="keywords" content="cybersecurity, network security, penetration testing, security engineer, VLAN, IDS, IPS">
+    <meta name="author" content="Ulu Chukwuemerie Ukaobasi">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Ulu Chukwuemerie Ukaobasi - Cybersecurity Professional">
+    <meta property="og:description" content="Cybersecurity student and aspiring Network Security Engineer">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://chiemerieulu.github.io">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="css/main.css" as="style">
+    <link rel="preload" href="js/main.js" as="script">
+    
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="YOUR_INTEGRITY_HASH" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
 </head>
 <body>
-    <div class="header">
-        <img src="/images/IMG_5120.png" alt="Profile Picture" class="profile-img">
-        <h1>Ulu Chukwuemerie Ukaobasi</h1>
-        <p>Cybersecurity Student | Aspiring Network Security Engineer</p>
-        <div class="contact-links icons-alt">
-            <a href="mailto:ulu.chiemerie@gmail.com"><i class="fas fa-envelope"></i> Email</a>
-            <a href="https://www.linkedin.com/in/chukwuemerie-ulu-87a194156"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a>
-            <a href="https://github.com/chiemerieulu"><i class="fa-brands fa-github"></i> GitHub</a>
-        </div>
-    </div>
-
-    <div class="section">
-        <h2>About Me</h2>
-        <p>Second year Cybersecurity student at Caleb University with a strong focus on network security. Passionate about designing, building and optimizing networks and identifying network vulnerabilities. Currently maintaining a 4.8 GPA while actively working as a freelance no-code Web Developer</p>
-    <div class="section">
-        <h2>Featured Projects</h2>
-        <div id="projects-container">
-            <!-- Projects will be loaded via JavaScript -->
-        </div>
-    </div>
-
-    <div class="section">
-        <h2>Technical Skills</h2>
-        <div class="skills-grid">
-            <div class="skill-category">
-                <h3>Network Security</h3>
-                <ul>
-                    <li>Firewall Configuration</li>
-                    <li>IDS/IPS Implementation</li>
-                    <li>VPN Setup</li>
-                    <li>Network Monitoring</li>
-                    <li>Cisco Packet Tracer</li>
-                    <li>Wireshark Analysis</li>
-                    
-                </ul>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">UCU</span>
             </div>
-            
-            <div class="skill-category">
-                <h3>Tools & Technologies</h3>
-                <ul>
-                    <li>Wireshark</li>
-                    <li>Nmap</li>
-                    <li>Metasploit</li>
-                    <li>Snort</li>
-                </ul>
-            </div>
-            
-            <div class="skill-category">
-                <h3>Programming</h3>
-                <ul>
-                    <li>Python</li>
-                    <li>Bash Scripting</li>
-                    <li>C++</li>
-                    <li>PowerShell</li>
-                </ul>
-            </div>
-            
-            <div class="skill-category">
-                <h3>Certifications</h3>
-                <ul>
-                    <li>Network+ (In Progress)</li>
-                    <li>Security+ (Planning)</li>
-                    <li>CCNA (Expected 2028)</li>
-                </ul>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#certifications" class="nav-link">Certifications</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
         </div>
-    </div>
+    </nav>
 
-    <div class="section">
-        <h2>Education</h2>
-        <h3>Bachelor of Science in Cybersecurity</h3>
-        <p>Caleb University | Expected Graduation: July 2027</p>
-        <p>GPA: 4.8/5.0</p>
-        <p>Relevant Coursework:</p>
-        <ul>
-            <li>Network Security and Defense</li>
-            <li>Ethical Hacking</li>
-            <li>Security Risk Management</li>
-            <li>Cryptography</li>
-            <li>Digital Forensics</li>
-        </ul>
-    </div>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="title-line">Ulu Chukwuemerie</span>
+                        <span class="title-line">Ukaobasi</span>
+                    </h1>
+                    <p class="hero-subtitle">Cybersecurity Student & Aspiring Network Security Engineer</p>
+                    <p class="hero-description">
+                        Passionate about securing digital infrastructures and identifying network vulnerabilities. 
+                        Currently maintaining a 4.8 GPA while building expertise in network security and ethical hacking.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View Projects</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                    <div class="hero-social">
+                        <a href="mailto:ulu.chiemerie@gmail.com" class="social-link" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/chukwuemerie-ulu-87a194156" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/chiemerieulu" class="social-link" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-container">
+                        <img src="images/IMG_5120.png" alt="Ulu Chukwuemerie Ukaobasi" class="profile-img">
+                        <div class="profile-glow"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="scroll-arrow"></div>
+            </div>
+        </div>
+    </section>
 
-    <div class="section">
-        <h2>Extra-Curricular Activities</h2>
-        <ul>
-            <li>Active member of the University Google Developer Group Cybersecurity</li>
-            <li>Taking online challenges on platforms like TryHackMe and Hack The Box</li>
-            <li>Organize classes for local other students</li>
-            <li>Network with industry professionals and learn about emerging cybersecurity trends at conferences</li>
-            <li>Conduct vulnerability asessments on personal or simulated systems</li>
-            <li>Regular contributor to security forums and open-source projects</li>
-        </ul>
-    </div>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Dedicated to cybersecurity excellence</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-description">
+                        I'm a second-year Cybersecurity student at Caleb University with a strong focus on network security. 
+                        My passion lies in designing, building, and optimizing secure networks while identifying and mitigating vulnerabilities.
+                    </p>
+                    <p class="about-description">
+                        Currently maintaining a 4.8 GPA, I actively work as a freelance no-code Web Developer while pursuing 
+                        advanced knowledge in ethical hacking, network defense, and security risk management.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">4.8</span>
+                            <span class="stat-label">GPA</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">2027</span>
+                            <span class="stat-label">Graduation</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label">Projects</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-education">
+                    <h3 class="education-title">Education</h3>
+                    <div class="education-item">
+                        <h4>Bachelor of Science in Cybersecurity</h4>
+                        <p class="education-school">Caleb University</p>
+                        <p class="education-date">Expected Graduation: July 2027</p>
+                        <p class="education-gpa">GPA: 4.8/5.0</p>
+                    </div>
+                    <div class="coursework">
+                        <h4>Relevant Coursework</h4>
+                        <ul class="coursework-list">
+                            <li>Network Security and Defense</li>
+                            <li>Ethical Hacking</li>
+                            <li>Security Risk Management</li>
+                            <li>Cryptography</li>
+                            <li>Digital Forensics</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Technical Skills</h2>
+                <p class="section-subtitle">Comprehensive cybersecurity expertise</p>
+            </div>
+            <div class="skills-matrix">
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Network Security</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span class="skill-name">Firewall Configuration</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">IDS/IPS Implementation</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">VPN Setup</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Network Monitoring</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-tools"></i>
+                        <h3>Security Tools</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span class="skill-name">Wireshark</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Nmap</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Metasploit</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="70"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Snort</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-code"></i>
+                        <h3>Programming</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span class="skill-name">Python</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Bash Scripting</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">C++</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="70"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">PowerShell</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-network-wired"></i>
+                        <h3>Networking</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span class="skill-name">Cisco Packet Tracer</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">VLAN Configuration</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Routing Protocols</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Network Analysis</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="88"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Real-world cybersecurity implementations</p>
+            </div>
+            <div class="projects-grid" id="projects-container">
+                <!-- Projects will be loaded via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Certifications & Activities</h2>
+                <p class="section-subtitle">Continuous learning and professional development</p>
+            </div>
+            <div class="certifications-content">
+                <div class="certifications-grid">
+                    <div class="cert-item">
+                        <div class="cert-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <h3>Network+ (In Progress)</h3>
+                        <p>CompTIA Network+ certification focusing on networking concepts and security</p>
+                        <span class="cert-status in-progress">In Progress</span>
+                    </div>
+                    <div class="cert-item">
+                        <div class="cert-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Security+ (Planning)</h3>
+                        <p>CompTIA Security+ certification for cybersecurity fundamentals</p>
+                        <span class="cert-status planned">Planned 2025</span>
+                    </div>
+                    <div class="cert-item">
+                        <div class="cert-icon">
+                            <i class="fab fa-cisco"></i>
+                        </div>
+                        <h3>CCNA (Expected 2028)</h3>
+                        <p>Cisco Certified Network Associate for advanced networking skills</p>
+                        <span class="cert-status planned">Expected 2028</span>
+                    </div>
+                </div>
+                
+                <div class="activities-section">
+                    <h3>Extra-Curricular Activities</h3>
+                    <div class="activities-grid">
+                        <div class="activity-item">
+                            <i class="fab fa-google"></i>
+                            <div class="activity-content">
+                                <h4>Google Developer Group</h4>
+                                <p>Active member of University GDG Cybersecurity chapter</p>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <i class="fas fa-flag"></i>
+                            <div class="activity-content">
+                                <h4>CTF Competitions</h4>
+                                <p>Regular participant in TryHackMe and Hack The Box challenges</p>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                            <div class="activity-content">
+                                <h4>Peer Teaching</h4>
+                                <p>Organize cybersecurity classes for fellow students</p>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <i class="fas fa-users"></i>
+                            <div class="activity-content">
+                                <h4>Professional Networking</h4>
+                                <p>Active in security forums and open-source contributions</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's discuss cybersecurity opportunities</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>ulu.chiemerie@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>LinkedIn</h3>
+                            <p>Connect with me professionally</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>GitHub</h3>
+                            <p>View my code repositories</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Ulu Chukwuemerie Ukaobasi. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="mailto:ulu.chiemerie@gmail.com" class="social-link" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/chukwuemerie-ulu-87a194156" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/chiemerieulu" class="social-link" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="js/main.js"></script>
 </body>
